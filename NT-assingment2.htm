@@ -1,0 +1,965 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;}
+@font-face
+	{font-family:"Aptos Display";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	color:#0F4761;}
+.MsoChpDefault
+	{font-size:12.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:11.25pt;border:none'><b><span
+style='font-size:16.0pt;line-height:115%'>Part 1: Theoretical Concepts</span></b></p>
+
+<h2 style='margin-top:0cm'>1.1 Ethernet Standards &amp; Frame Structure</h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none'><span
+style='font-size:16.0pt;line-height:115%'>Ethernet is the standard
+communication protocol embedded in software and hardware devices, used for
+building a local area network (LAN). It operates primarily at the Physical and
+Data Link layers of the OSI model.</span></p>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>Physical
+Layer Standards</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>Common Ethernet standards define the cabling and speed
+specifications:</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=624
+ style='margin-left:.1pt;border-collapse:collapse;border:none'>
+ <thead>
+  <tr>
+   <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+   padding:0cm 0cm 0cm 0cm'>
+   <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+   line-height:115%'>Standard</span></p>
+   </td>
+   <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+   border-left:none;padding:0cm 0cm 0cm 0cm'>
+   <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+   line-height:115%'>Speed</span></p>
+   </td>
+   <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+   border-left:none;padding:0cm 0cm 0cm 0cm'>
+   <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+   line-height:115%'>Cable Type</span></p>
+   </td>
+   <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+   border-left:none;padding:0cm 0cm 0cm 0cm'>
+   <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+   line-height:115%'>Max Distance</span></p>
+   </td>
+  </tr>
+ </thead>
+ <tr>
+  <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><b><span style='font-size:16.0pt;
+  line-height:115%'>10BASE-T</span></b></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>10 Mbps</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>Cat 3 UTP</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>100 meters</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><b><span style='font-size:16.0pt;
+  line-height:115%'>100BASE-TX</span></b></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>100 Mbps</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>Cat 5 UTP</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>100 meters</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=156 valign=top style='width:117.0pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><b><span style='font-size:16.0pt;
+  line-height:115%'>1000BASE-T</span></b></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>1 Gbps</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>Cat 5e/6 UTP</span></p>
+  </td>
+  <td width=156 valign=top style='width:117.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+  line-height:115%'>100 meters</span></p>
+  </td>
+ </tr>
+</table>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>Ethernet Limits</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Distance:</span></b><span style='font-size:16.0pt'>
+Copper cabling (UTP) is generally limited to <b>100 meters</b> (328 feet) to
+prevent signal attenuation. Fiber optic runs can go much further.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>MTU (Maximum Transmission Unit):</span></b><span
+style='font-size:16.0pt'> The standard maximum payload size is <b>1500 bytes</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Minimum Size:</span></b><span style='font-size:16.0pt'>
+The minimum frame size is <b>64 bytes</b> (46 bytes of data + 18 bytes of
+header/trailer). If data is smaller, padding is added.</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>Ethernet Frame</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>The Ethernet frame is the data packet unit transferred over
+the wire.</span></p>
+
+<p class=MsoNormal style='border:none'><b><span style='font-size:16.0pt;
+line-height:115%'>Structure:</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Preamble &amp; SFD (8 Bytes):</span></b><span
+style='font-size:16.0pt'> Synchronization pattern to alert receivers a frame is
+coming.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Destination MAC (6 Bytes):</span></b><span
+style='font-size:16.0pt'> Physical address of the receiver.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Source MAC (6 Bytes):</span></b><span
+style='font-size:16.0pt'> Physical address of the sender.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Type/Length (2 Bytes):</span></b><span
+style='font-size:16.0pt'> Indicates the protocol carried in the payload (e.g.,
+IPv4).</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Data/Payload (46–1500 Bytes):</span></b><span
+style='font-size:16.0pt'> The actual data being transported.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>FCS (4 Bytes):</span></b><span style='font-size:16.0pt'>
+Frame Check Sequence used for error detection (CRC).</span></p>
+
+<h2 style='margin-bottom:12.0pt'>1.2 MAC Address &amp; Broadcasting</h2>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>MAC
+Address (Media Access Control)</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>A MAC address is a unique, 48-bit hardware identifier
+assigned to network interfaces for communications at the Data Link Layer (Layer
+2).</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Format:</span></b><span style='font-size:16.0pt'>
+Hexadecimal (e.g., 00:1A:2B:3C:4D:5E).</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Composition:</span></b><span style='font-size:16.0pt'>
+The first 24 bits are the <b>OUI</b> (Organizationally Unique Identifier)
+assigned to the manufacturer. The last 24 bits are assigned by the vendor to
+the specific card.</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>Broadcasting</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>Broadcasting is a method of sending a message to <b>all</b>
+recipients on the network segment simultaneously.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Broadcast MAC Address:</span></b><span
+style='font-size:16.0pt'> FF:FF:FF:FF:FF:FF</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Usage:</span></b><span style='font-size:16.0pt'> Used
+by protocols like ARP (to find an owner of an IP) and DHCP (to find a server).</span></p>
+
+<h2>1.3 Hub vs. Switch vs. Router</h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none'><span
+style='font-size:16.0pt;line-height:115%'>These devices connect network nodes
+but operate at different layers and with different intelligence.</span></p>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>1.
+Hub (Layer 1 - Physical)</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Operation:</span></b><span style='font-size:16.0pt'> A
+&quot;dumb&quot; repeater. When it receives bits on one port, it blindly copies
+them to <b>all</b> other ports.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Performance:</span></b><span style='font-size:16.0pt'>
+High congestion. All devices share the same bandwidth.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Collision Domain:</span></b><span style='font-size:
+16.0pt'> Single shared collision domain (only one device can talk at a time).</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>2. Switch (Layer 2 - Data
+Link)</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Operation:</span></b><span style='font-size:16.0pt'>
+Intelligent device. It learns MAC addresses and stores them in a MAC Table. It
+forwards frames <b>only</b> to the specific port where the destination MAC
+resides.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Performance:</span></b><span style='font-size:16.0pt'>
+Full bandwidth per port.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Collision Domain:</span></b><span style='font-size:
+16.0pt'> Breaks collision domains (each port is its own domain).</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>3. Router (Layer 3 -
+Network)</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Operation:</span></b><span style='font-size:16.0pt'>
+Routes data packets between <b>different networks</b> (e.g., LAN to
+WAN/Internet) based on IP addresses.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Broadcast Domain:</span></b><span style='font-size:
+16.0pt'> Routers stop broadcasts. Each interface creates a separate broadcast
+domain.</span></p>
+
+<h2 style='margin-bottom:12.0pt'>1.4 CSMA/CD &amp; Duplex Modes</h2>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>CSMA/CD
+(Carrier Sense Multiple Access with Collision Detection)</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>This is the access control protocol used in early Ethernet
+(half-duplex) to manage traffic on a shared wire.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Carrier Sense:</span></b><span style='font-size:16.0pt'>
+Listen to the wire. Is anyone talking?</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Multiple Access:</span></b><span style='font-size:
+16.0pt'> If silent, start transmitting.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Collision Detection:</span></b><span style='font-size:
+16.0pt'> If another device transmits at the same time, a voltage spike
+(collision) occurs.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Recovery:</span></b><span style='font-size:16.0pt'>
+Both devices stop, send a &quot;jam signal,&quot; wait a random amount of time
+(backoff), and retry.</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>Half vs. Full Duplex</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Half-Duplex:</span></b><span style='font-size:16.0pt'>
+Data flows in both directions, but <b>only one way at a time</b> (like a
+walkie-talkie). This is used by Hubs and requires CSMA/CD.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Full-Duplex:</span></b><span style='font-size:16.0pt'>
+Data flows in both directions <b>simultaneously</b> (like a telephone). This is
+used by modern Switches. It uses separate wire pairs for transmitting and
+receiving, eliminating collisions entirely.</span></p>
+
+<h2 style='margin-bottom:12.0pt'>1.5 ARP &amp; Detecting Doubled IP Addresses</h2>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>ARP
+(Address Resolution Protocol)</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>ARP is used to map a known Layer 3 address (IP Address) to an
+unknown Layer 2 address (MAC Address).</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Request:</span></b><span style='font-size:16.0pt'>
+&quot;Who has IP 192.168.1.5?&quot; (Sent as a Broadcast).</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Reply:</span></b><span style='font-size:16.0pt'>
+&quot;I have 192.168.1.5, my MAC is AA:BB:CC...&quot; (Sent as Unicast).</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>Detecting Doubled
+(Duplicate) IP Addresses</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>Operating systems use <b>Gratuitous ARP</b> (GARP) to detect
+conflicts.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Mechanism:</span></b><span style='font-size:16.0pt'>
+When a device boots up or links up, it sends an ARP Request asking for <b>its
+own IP address</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Result:</span></b><span style='font-size:16.0pt'> If
+it receives a reply, it means another device on the network is already using
+that IP. The OS will disable the interface and alert the user of an &quot;IP
+Address Conflict.&quot;</span></p>
+
+<h2 style='margin-bottom:12.0pt'>1.6 BOOTP &amp; DHCP</h2>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>BOOTP
+(Bootstrap Protocol)</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>An older, static protocol used to assign IPs to diskless
+workstations.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Limitation:</span></b><span style='font-size:16.0pt'>
+It requires an administrator to manually create a static map of MAC addresses
+to IP addresses on the server. It does not support temporary leases or
+automatic reclamation of unused IPs.</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>DHCP (Dynamic Host
+Configuration Protocol)</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>The modern successor to BOOTP. It dynamically assigns IP
+addresses, Subnet Masks, Gateways, and DNS servers from a pool.</span></p>
+
+<p class=MsoNormal style='border:none'><b><span style='font-size:16.0pt;
+line-height:115%'>The DORA Process:</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Discover:</span></b><span style='font-size:16.0pt'>
+Client broadcasts to find a DHCP server.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Offer:</span></b><span style='font-size:16.0pt'>
+Server offers an available IP address.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Request:</span></b><span style='font-size:16.0pt'>
+Client asks to lease that specific IP.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Acknowledge:</span></b><span style='font-size:16.0pt'>
+Server confirms the lease and sends configuration details.</span></p>
+
+<h2>1.7 VLANs (Virtual LANs)</h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;border:none'><span
+style='font-size:16.0pt;line-height:115%'>A VLAN allows a network administrator
+to segment a physical switch into multiple logical networks.</span></p>
+
+<h3 style='margin-top:0cm'><span style='font-size:16.0pt;line-height:115%'>Key
+Concepts</span></h3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Segmentation:</span></b><span style='font-size:16.0pt'>
+Separates traffic (e.g., Guest Wi-Fi vs. Corporate Data). Devices in VLAN 10
+cannot communicate with VLAN 20 without a router.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Broadcast Control:</span></b><span style='font-size:
+16.0pt'> Reduces network congestion by limiting broadcast traffic to a specific
+VLAN.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:16.0pt'>Security:</span></b><span style='font-size:16.0pt'>
+Sensitive groups (like HR or Finance) can be isolated.</span></p>
+
+<h3><span style='font-size:16.0pt;line-height:115%'>802.1Q Tagging</span></h3>
+
+<p class=MsoNormal style='border:none'><span style='font-size:16.0pt;
+line-height:115%'>To carry traffic for multiple VLANs across a single cable (a <b>Trunk
+link</b> between switches), the frames must be &quot;tagged.&quot;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:16.0pt'>The 802.1Q protocol inserts a <b>4-byte tag</b> into
+the Ethernet header.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:30.0pt;text-indent:-18.0pt;line-height:normal;border:none'><span
+style='font-size:11.0pt;font-family:"Arial",sans-serif;color:black'>&#9679;<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:16.0pt'>This tag contains the <b>VLAN ID</b> (VID),
+identifying which VLAN the frame belongs to.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.1:
+MAC Address and Default Gateway</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Identify the physical address of the
+local machine and the Default Gateway.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Procedure
+&amp; Analysis:</span></b><span style='font-size:16.0pt;line-height:115%'> To
+determine the local MAC address, I used the ipconfig /all command (Screenshot
+1).</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>My
+     Physical Address:</span></b><span style='font-size:16.0pt;line-height:
+     115%'> F8-B5-4D-E6-EA-AB</span></li>
+</ul>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>To find the
+MAC address of the Default Gateway (192.168.18.1), I used Wireshark to capture
+the ARP resolution process.</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Screenshot
+     2 Analysis:</span></b><span style='font-size:16.0pt;line-height:115%'> As
+     seen in <b>Packet 57</b>, the Gateway sent an ARP Reply explicitly
+     stating: &quot;192.168.18.1 is at e4:dc:cc:e0:84:40&quot;.</span></li>
+ <li class=MsoNormal><b><span lang=DE style='font-size:16.0pt;line-height:115%'>Gateway
+     MAC:</span></b><span lang=DE style='font-size:16.0pt;line-height:115%'> e4:dc:cc:e0:84:40
+     (Huawei Technologies).</span></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=DE style='font-size:
+16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=672 height=120 src="NT-assingment2_files/image001.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+1</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=1146 height=485 src="NT-assingment2_files/image002.png"
+alt="A screenshot of a computer&#10;&#10;AI-generated content may be incorrect."></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+2</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.2:
+Network Adapter Producer</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Identify the manufacturer of the
+network interface cards.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Analysis:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Using Wireshark's OUI
+(Organizationally Unique Identifier) resolution feature, the first 3 bytes of
+the MAC address were used to identify the vendor.</span></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>My
+     Adapter:</span></b><span style='font-size:16.0pt;line-height:115%'> The
+     OUI F8-B5-4D resolves to <b>Intel Corporate</b>.</span></li>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Gateway
+     Adapter:</span></b><span style='font-size:16.0pt;line-height:115%'> The
+     OUI E4-DC-CC resolves to <b>Huawei Technologies</b>.</span></li>
+</ul>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>(This is
+verified in the Ethernet II header shown in Task 2.1).</span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>This OUI
+result was directly confirmed by checking the adapter's properties in Device
+Manager  </span></i><span style='font-size:16.0pt;line-height:115%'>(Screenshot
+3)</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=588 height=294 src="NT-assingment2_files/image003.png"
+alt="A screenshot of a computer&#10;&#10;AI-generated content may be incorrect."></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+3</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.3:
+Flushing the ARP Cache</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Clear the ARP table and observe the
+behavior of the operating system.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Procedure:</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:115%'>I displayed the
+current cache using arp -a.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:115%'>I executed the
+flush command: arp -d * (Run as Administrator).</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:16.0pt;line-height:115%'>I immediately
+checked the table again.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Observation:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Initially, the ARP table contained
+multiple dynamic entries (e.g., 192.168.18.46). After the flush command, the
+cache was cleared. However, the entry for the Default Gateway (192.168.18.1)
+reappeared almost instantly.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Explanation:</span></b><span
+style='font-size:16.0pt;line-height:115%'> This immediate reappearance is
+expected behavior. Modern operating systems maintain active background network
+connections. Even after a flush, the OS immediately sends a new ARP Request to
+the Gateway to maintain connectivity, repopulating that specific entry while
+leaving inactive hosts cleared.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=484 height=717 id="Picture 6" src="NT-assingment2_files/image004.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+4</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=482 height=615 id="Picture 7" src="NT-assingment2_files/image005.png"></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+5</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.4:
+IP Address Conflict Detection</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Detect an IP conflict using ARP
+requests.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Procedure:</span></b><span
+style='font-size:16.0pt;line-height:115%'> I identified an active host on the
+network (192.168.18.50, a Samsung device). I then manually configured my
+network adapter to use this same static IP address to force a conflict.</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=561 height=385 id="Picture 1" src="NT-assingment2_files/image006.png"
+alt="A screenshot of a computer&#10;&#10;AI-generated content may be incorrect."></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+6</span></i></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></i></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Wireshark
+Analysis:</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>ARP Probe:</span></b><span
+style='font-size:16.0pt;line-height:115%'> My computer sent an ARP request
+asking &quot;Who has 192.168.18.50?&quot; to check if the IP was free.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>Conflict
+Detected:</span></b><span style='font-size:16.0pt;line-height:115%'> The
+existing host (SamsungElect_87:d3:b6) replied, claiming ownership of the IP.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>Result:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Windows detected the duplicate MAC
+address response and rejected the static configuration to prevent network
+instability.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=935 height=42 id="Picture 8" src="NT-assingment2_files/image007.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+7</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.5:
+DHCP Protocol Analysis (DORA)</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Capture and analyze the packets
+required to obtain an IP address.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Procedure:</span></b><span
+style='font-size:16.0pt;line-height:115%'> I utilized Wireshark to capture the
+DHCP handshake process known as <b>DORA</b> (Discover, Offer, Request,
+Acknowledge).</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Packet
+Breakdown:</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>DHCP Discover:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Source 0.0.0.0. The client
+broadcasts a request to locate a DHCP server.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>DHCP Offer:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Source 192.168.18.1. The router
+offers the IP 192.168.18.41.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>DHCP Request:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Source 0.0.0.0. The client
+explicitly requests to lease the offered IP.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-size:16.0pt;line-height:115%'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:16.0pt;line-height:115%'>DHCP ACK:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Source 192.168.18.1. The server
+acknowledges the request and finalizes the lease.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=975 height=233 id="Picture 9" src="NT-assingment2_files/image008.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+8</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.6:
+Release and Renew IP Address</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Manually trigger the DHCP process
+via the command line.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Procedure:</span></b></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Step 1
+     (Release):</span></b><span style='font-size:16.0pt;line-height:115%'> I
+     executed ipconfig /release. The screenshot confirms the &quot;Media
+     disconnected&quot; state, indicating the IP configuration was dropped.
+     (Screenshot 9)</span></li>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Step 2
+     (Renew):</span></b><span style='font-size:16.0pt;line-height:115%'> I
+     executed ipconfig /renew. This triggered the DORA process analyzed in Task
+     2.5. The command output confirms the adapter successfully regained its IP
+     address (192.168.18.41) and Gateway connection. (Screenshot 10)</span></li>
+</ul>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=1125 height=723 id="Picture 10" src="NT-assingment2_files/image009.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+9</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=887 height=646 id="Picture 11" src="NT-assingment2_files/image010.png"></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+10</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Task 2.7:
+MAC Address Spoofing</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Objective:</span></b><span
+style='font-size:16.0pt;line-height:115%'> Change the MAC address of a host to
+mimic another device on the network.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Challenge
+&amp; Solution:</span></b><span style='font-size:16.0pt;line-height:115%'> I
+attempted to spoof the MAC address of the target Samsung device
+(94-E6-BA-87-D3-B6) on my physical Intel Wi-Fi adapter. However, the operation
+failed because the Intel network driver enforces a security restriction: it
+only accepts &quot;Locally Administered&quot; addresses (starting with 02, 06,
+0A, or 0E).</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Resolution:</span></b><span
+style='font-size:16.0pt;line-height:115%'> To demonstrate the spoofing
+capability, I performed the cloning on the <b>VMware Virtual Ethernet Adapter
+(VMnet8)</b> instead, using the <i>Technitium MAC Address Changer</i>.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Result:</span></b></p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Screenshot
+     11:</span></b><span style='font-size:16.0pt;line-height:115%'> Shows the
+     hardware error on the physical Intel adapter.</span></li>
+ <li class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>Screenshot
+     12:</span></b><span style='font-size:16.0pt;line-height:115%'> Proves the
+     Virtual Adapter successfully accepted the target MAC (94-E6-BA-87-D3-B6)
+     and subsequently obtained a valid IP address (192.168.134.128) from the
+     network, verifying the spoof was successful.</span></li>
+</ul>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'><img
+width=988 height=748 id="Picture 14" src="NT-assingment2_files/image011.png"
+alt="A computer screen with a message&#10;&#10;AI-generated content may be incorrect."></span></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+11</span></i></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'><img
+width=855 height=394 id="Picture 13" src="NT-assingment2_files/image012.png"></span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:16.0pt;line-height:115%'>Screenshot
+12</span></i></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
